@@ -8,6 +8,12 @@ $database = getenv('MYSQLDATABASE') ?: 'empresa_ajax';
 $user = getenv('MYSQLUSER') ?: 'root';
 $password = getenv('MYSQLPASSWORD') ?: '';
 
+error_log('MYSQLHOST: ' . (getenv('MYSQLHOST') ? 'CONFIGURADO' : 'VACIO'));
+error_log('MYSQLPORT: ' . (getenv('MYSQLPORT') ? 'CONFIGURADO' : 'VACIO'));
+error_log('MYSQLDATABASE: ' . (getenv('MYSQLDATABASE') ? 'CONFIGURADO' : 'VACIO'));
+error_log('MYSQLUSER: ' . (getenv('MYSQLUSER') ? 'CONFIGURADO' : 'VACIO'));
+error_log('MYSQLPASSWORD: ' . (getenv('MYSQLPASSWORD') ? 'CONFIGURADO' : 'VACIO'));
+
 try {
     $conexion = new PDO(
         "mysql:host={$host};port={$port};dbname={$database};charset=utf8mb4",
