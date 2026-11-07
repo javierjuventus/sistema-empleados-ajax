@@ -20,6 +20,7 @@ try {
         ]
     );
 } catch (PDOException $e) {
+    error_log('Error de conexión MySQL: ' . $e->getMessage());
     http_response_code(500);
     exit('No fue posible conectar con la base de datos.');
 }
