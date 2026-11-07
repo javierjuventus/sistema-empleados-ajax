@@ -1,0 +1,10 @@
+﻿{
+    "name": "javier/sistema-empleados",
+    "description": "Sistema de gestion de empleados con PHP, MySQL y AJAX",
+    "type": "project",
+    "require": {
+        "php": ">=8.2",
+        "ext-pdo": "*",
+        "ext-pdo_mysql": "*"
+    }
+}

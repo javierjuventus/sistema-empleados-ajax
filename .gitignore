@@ -1,0 +1,8 @@
+﻿.env
+.env.*
+!.env.example
+*.sql
+*.log
+/vendor/
+/conexion_local_backup.php
+/php/conexion_local_backup.php

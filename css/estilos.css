@@ -1,0 +1,19 @@
+body {
+  background-color: #f5f7fb;
+  color: #253247;
+}
+.login-page {
+  background: linear-gradient(135deg, #e8efff 0%, #f7f9fc 100%);
+}
+.card {
+  border-radius: 0.85rem;
+}
+.table th {
+  white-space: nowrap;
+}
+.table td {
+  vertical-align: middle;
+}
+.btn-link {
+  font-weight: 600;
+}
